@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'material',
     'material.frontend',
     'material.admin',
+
     # standard django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,13 +41,18 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'debug_toolbar',
     'template_debug',
+
     # test apps
     'demo.examples.accounting',
     'demo.examples.sales',
+
     # test admin apps
     'django.contrib.flatpages',
     'django.contrib.redirects',
     'django.contrib.sites',
+
+    # issues regressions
+    'demo.issues.issue_29_admin_inheritedformfields',
 )
 
 if 'test' not in sys.argv:
