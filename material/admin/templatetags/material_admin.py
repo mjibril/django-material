@@ -27,6 +27,7 @@ CL_VALUE_RE = re.compile('value="(.*)\"')
 
 
 def get_admin_site(request):
+    """ TODO. Remove """
     site_modules = getattr(
         settings,
         'MATERIAL_ADMIN_SITES',
